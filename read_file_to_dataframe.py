@@ -9,3 +9,4 @@
 def read_file_to_dataframe(file_to_read):
   import pandas as pd
   dataframe = pd.read_csv(file_to_read,  sep = "\s+", skiprows = 2, header = None, skipinitialspace = True, skipfooter=4, engine = "python")
+  return dataframe
